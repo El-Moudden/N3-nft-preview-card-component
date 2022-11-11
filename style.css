@@ -37,7 +37,7 @@ body {
 .content h2 {
     color: white;
     font-size: 14px;
-    margin: 10px 0 10px 0;
+    margin: 15px 0 15px 0;
 }
 .content p {
     color: #87A4D0;
@@ -54,9 +54,11 @@ body {
 .clock {
     display: flex;
     align-items: center;
+    position: relative;
     
 }
  .clock .imgi {
+    margin-bottom: 15px;
     width: 7px;
     /* height: 12px; */
     margin-right: 5px;
@@ -66,6 +68,7 @@ body {
     color: #00F7F4;
     font-size: 11px;
     margin-right: 47px;
+    margin-bottom:15px ;
 }
 .clock .imgo {
     width: 10px;
@@ -75,16 +78,22 @@ body {
     font-size: 10px;
     color: #87A4D0;
     font-weight: 300;
+    
+  
 }
-hr {
-    border-top: 0.5px solid #87A4D0;
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;
-    margin-bottom: 10px;
+.clock h3::after {
+    position: absolute;
+    content: ' ';
+    border-bottom: 1px solid #87A4D0 ;
+    width: 170px;
+    bottom: 0;
+    left: 0;
+
 }
 
+
 .footer {
+    margin-top: 30px;
     display: flex;
     align-items: center;
 }.footer img {
